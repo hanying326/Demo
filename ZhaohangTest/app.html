@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>招行信用卡POC</title>
+    <link rel="stylesheet" href="frozen.css">
+    <style>
+        html,body{
+            height: 100%;
+        }
+        .ui-tab-content{width:200%;transition-property:transform;transition-timing-function:cubic-bezier(0.1,0.57,0.1,1);transition-duration:0ms;}
+        .left{transform:translate(0px,0px) translateZ(0px)}
+        .right{transform:translate(-50%,0px) translateZ(0px)}
+        .ui-tab-content li{height:0}
+        .ui-tab-content li.current{height:auto !important}
+        .ui-footer-btn {
+            background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f4fbff),to(#e9f6fe))
+            color: #00a5e0;
+        }
+        #asr-result{height:120px;overflow-y:scroll;
+            border: 1px solid #1d99de;
+            border-radius: 4px;}
+        .ui-header {
+            top: 0;
+            height: 65px;
+            line-height: 65px;
+            padding-top: 10px;
+        }
+        .text-label{
+            margin-top: 30px;
+            color: #29b3ff;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body ontouchstart="">
+<header class="ui-header ui-header-positive ui-border-b">
+    <h1>招行信用卡POC</h1>
+</header>
+<footer class="ui-footer ui-footer-btn" style="border-top: 1px solid #c8c8c8;">
+    <ul class="ui-tiled ui-border-t">
+        <li class="ui-border-r btn-asr"><div>识别</div></li>
+        <li class="ui-border-r btn-tts"><div>合成</div></li>
+    </ul>
+</footer>
+<section class="ui-container">
+    <section id="tab">
+        <div class="demo-item">
+            <div class="demo-block">
+                <div class="ui-tab">
+                    <ul class="ui-tab-content left">
+                        <li class="current tab-asr">
+                            <p class="text-label">识别结果:</p>
+                            <div class="ui-whitespace">
+                                <p class="ui-txt-default" id="asr-result"></p>
+                            </div>
+                            <div class="ui-btn-wrap">
+                                <button class="ui-btn-lg ui-btn-primary" id="asrBtn" ontouchstart="startAsr(this)" ontouchend="endAsr(this)">
+                                    按住录音
+                                </button>
+                            </div>
+                        </li>
+                        <li class="tab-tts">
+                            <p class="text-label">输入文字:</p>
+                            <div class="ui-form-item ui-form-item-pure ui-border-b">
+                                <input type="text" placeholder="输入文字" id="ttsInput">
+                                <!--<a href="#" class="ui-icon-close"></a>-->
+                            </div>
+                            <div class="ui-btn-wrap">
+                                <button class="ui-btn-lg ui-btn-primary" id="ttsBtn" ontouchstart="startTts(this)">
+                                    播放TTS
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<!--<script src="zepto.min.js"></script>-->
+<!--<script src="frozen.js"></script>-->
+<script>
+    (function (){
+        $('.btn-asr').on('click', function () {
+            $('.ui-tab-content').removeClass('right').addClass('left');
+            $('.ui-tab-content li.tab-asr').addClass('current');
+            $('.ui-tab-content li.tab-tts').removeClass('current');
+        })
+        $('.btn-tts').on('click', function () {
+            $('.ui-tab-content').removeClass('left').addClass('right');
+            $('.ui-tab-content li.tab-asr').removeClass('current');
+            $('.ui-tab-content li.tab-tts').addClass('current');
+        })
+    })();
+</script>
+<script>
+    function startAsr(o) {
+        if($(o).hasClass('disabled')){
+            return;
+        }
+        
+       window.webkit.messageHandlers.startAsr.postMessage("startAsr");
+
+    }
+
+    function endAsr(o) {
+        $(o).addClass('disabled')
+
+        //android
+        
+          window.webkit.messageHandlers.endAsr.postMessage("endAsr");
+        
+        
+    }
+    function showText(text) {
+        document.querySelector('#asr-result').innerHTML = text;
+        $('#asrBtn').removeClass('disabled')
+    }
+    function startTts(o) {
+        if($(o).hasClass('disabled')){
+            return;
+        }
+        var text = document.querySelector('#ttsInput').value;
+        if (text.length === 0){
+            text = "你好，我是小i机器人";
+        }
+        $(o).addClass('disabled')
+
+        //ios
+        window.webkit.messageHandlers.sendTtsText.postMessage(text);
+        
+    }
+
+    function endTts() {
+        $('#ttsBtn').removeClass('disabled')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		396BB3EC1FE26C70007A9683 /* H5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396BB3EB1FE26C70007A9683 /* H5ViewController.m */; };
+		396BDE0A1FE2242C0029EC65 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396BDE091FE2242C0029EC65 /* MediaPlayer.framework */; };
+		396BDE0C1FE224320029EC65 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396BDE0B1FE224320029EC65 /* MediaToolbox.framework */; };
+		3981CA421FE28D99001F7F17 /* app.html in Resources */ = {isa = PBXBuildFile; fileRef = 3981CA411FE28D99001F7F17 /* app.html */; };
+		39ED7E6C1FE115AC0045BA91 /* AsrWithWebSocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7E6B1FE115AC0045BA91 /* AsrWithWebSocketController.m */; };
+		39ED7E701FE116AD0045BA91 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7E6F1FE116AD0045BA91 /* AppInfo.m */; };
+		39ED7E721FE117360045BA91 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 39ED7E711FE117360045BA91 /* libz.tbd */; };
+		39ED7E7B1FE1188E0045BA91 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39ED7E791FE1188E0045BA91 /* libopencore-amrwb.a */; };
+		39ED7E7C1FE1188E0045BA91 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39ED7E7A1FE1188E0045BA91 /* libopencore-amrnb.a */; };
+		39ED7E7F1FE118B40045BA91 /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7E7E1FE118B40045BA91 /* amrFileCodec.m */; };
+		39ED7E8B1FE119770045BA91 /* AVAudioPlayer+PCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7E8A1FE119770045BA91 /* AVAudioPlayer+PCM.m */; };
+		39ED7E8E1FE119840045BA91 /* MCAudioInputQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7E8C1FE119840045BA91 /* MCAudioInputQueue.m */; };
+		39ED7E951FE122C00045BA91 /* TtsWithHttpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7E941FE122C00045BA91 /* TtsWithHttpController.m */; };
+		39ED7E981FE122D30045BA91 /* AsrWithHttpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7E971FE122D30045BA91 /* AsrWithHttpController.m */; };
+		39ED7EC11FE136440045BA91 /* AsrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7EC01FE136440045BA91 /* AsrViewController.m */; };
+		39ED7EC41FE136640045BA91 /* TTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7EC31FE136640045BA91 /* TTSViewController.m */; };
+		39F395D21FE11456007E0450 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F395D11FE11456007E0450 /* AppDelegate.m */; };
+		39F395D51FE11456007E0450 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F395D41FE11456007E0450 /* ViewController.m */; };
+		39F395D81FE11456007E0450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F395D61FE11456007E0450 /* Main.storyboard */; };
+		39F395DA1FE11456007E0450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F395D91FE11456007E0450 /* Assets.xcassets */; };
+		39F395DD1FE11456007E0450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F395DB1FE11456007E0450 /* LaunchScreen.storyboard */; };
+		39F395E01FE11456007E0450 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F395DF1FE11456007E0450 /* main.m */; };
+		9B18B751F48270F34BE0B402 /* Pods_ZhaohangTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5ED9277795729B43CB59BB /* Pods_ZhaohangTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		396BB3EA1FE26C62007A9683 /* H5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewController.h; sourceTree = "<group>"; };
+		396BB3EB1FE26C70007A9683 /* H5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5ViewController.m; sourceTree = "<group>"; };
+		396BDE091FE2242C0029EC65 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		396BDE0B1FE224320029EC65 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		3981CA411FE28D99001F7F17 /* app.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = app.html; path = ZhaohangTest/app.html; sourceTree = SOURCE_ROOT; };
+		39ED7E6A1FE115AC0045BA91 /* AsrWithWebSocketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsrWithWebSocketController.h; path = ZhaohangTest/AsrWithWebSocketController.h; sourceTree = SOURCE_ROOT; };
+		39ED7E6B1FE115AC0045BA91 /* AsrWithWebSocketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsrWithWebSocketController.m; path = ZhaohangTest/AsrWithWebSocketController.m; sourceTree = SOURCE_ROOT; };
+		39ED7E6E1FE116AD0045BA91 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppInfo.h; path = ZhaohangTest/AppInfo.h; sourceTree = SOURCE_ROOT; };
+		39ED7E6F1FE116AD0045BA91 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppInfo.m; path = ZhaohangTest/AppInfo.m; sourceTree = SOURCE_ROOT; };
+		39ED7E711FE117360045BA91 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		39ED7E791FE1188E0045BA91 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "ZhaohangTest/libopencore-amrwb.a"; sourceTree = "<group>"; };
+		39ED7E7A1FE1188E0045BA91 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "ZhaohangTest/libopencore-amrnb.a"; sourceTree = "<group>"; };
+		39ED7E7D1FE118B40045BA91 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amrFileCodec.h; path = amr/amrFileCodec.h; sourceTree = SOURCE_ROOT; };
+		39ED7E7E1FE118B40045BA91 /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = amrFileCodec.m; path = amr/amrFileCodec.m; sourceTree = SOURCE_ROOT; };
+		39ED7E831FE1191D0045BA91 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dec_if.h; path = "amr/include/opencore-amrwb/dec_if.h"; sourceTree = SOURCE_ROOT; };
+		39ED7E841FE1191D0045BA91 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = if_rom.h; path = "amr/include/opencore-amrwb/if_rom.h"; sourceTree = SOURCE_ROOT; };
+		39ED7E851FE119300045BA91 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interf_dec.h; path = "amr/include/opencore-amrnb/interf_dec.h"; sourceTree = SOURCE_ROOT; };
+		39ED7E861FE119300045BA91 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interf_enc.h; path = "amr/include/opencore-amrnb/interf_enc.h"; sourceTree = SOURCE_ROOT; };
+		39ED7E891FE119770045BA91 /* AVAudioPlayer+PCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVAudioPlayer+PCM.h"; path = "ZhaohangTest/AVAudioPlayer+PCM.h"; sourceTree = SOURCE_ROOT; };
+		39ED7E8A1FE119770045BA91 /* AVAudioPlayer+PCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVAudioPlayer+PCM.m"; path = "ZhaohangTest/AVAudioPlayer+PCM.m"; sourceTree = SOURCE_ROOT; };
+		39ED7E8C1FE119840045BA91 /* MCAudioInputQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCAudioInputQueue.m; path = ZhaohangTest/MCAudioInputQueue.m; sourceTree = SOURCE_ROOT; };
+		39ED7E8D1FE119840045BA91 /* MCAudioInputQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCAudioInputQueue.h; path = ZhaohangTest/MCAudioInputQueue.h; sourceTree = SOURCE_ROOT; };
+		39ED7E8F1FE11E150045BA91 /* zhaohangTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zhaohangTest-Prefix.pch"; sourceTree = "<group>"; };
+		39ED7E931FE122C00045BA91 /* TtsWithHttpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TtsWithHttpController.h; path = ZhaohangTest/TtsWithHttpController.h; sourceTree = SOURCE_ROOT; };
+		39ED7E941FE122C00045BA91 /* TtsWithHttpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TtsWithHttpController.m; path = ZhaohangTest/TtsWithHttpController.m; sourceTree = SOURCE_ROOT; };
+		39ED7E961FE122D30045BA91 /* AsrWithHttpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsrWithHttpController.h; path = ZhaohangTest/AsrWithHttpController.h; sourceTree = SOURCE_ROOT; };
+		39ED7E971FE122D30045BA91 /* AsrWithHttpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsrWithHttpController.m; path = ZhaohangTest/AsrWithHttpController.m; sourceTree = SOURCE_ROOT; };
+		39ED7EBF1FE136330045BA91 /* AsrViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsrViewController.h; sourceTree = "<group>"; };
+		39ED7EC01FE136440045BA91 /* AsrViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsrViewController.m; sourceTree = "<group>"; };
+		39ED7EC21FE136520045BA91 /* TTSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSViewController.h; sourceTree = "<group>"; };
+		39ED7EC31FE136640045BA91 /* TTSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTSViewController.m; sourceTree = "<group>"; };
+		39F395CD1FE11456007E0450 /* ZhaohangTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaohangTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F395D01FE11456007E0450 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39F395D11FE11456007E0450 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39F395D31FE11456007E0450 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39F395D41FE11456007E0450 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39F395D71FE11456007E0450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39F395D91FE11456007E0450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39F395DC1FE11456007E0450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39F395DE1FE11456007E0450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F395DF1FE11456007E0450 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F5ED9277795729B43CB59BB /* Pods_ZhaohangTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhaohangTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E13C14879D7A1E0C32C3C8C /* Pods-ZhaohangTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhaohangTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhaohangTest/Pods-ZhaohangTest.release.xcconfig"; sourceTree = "<group>"; };
+		EA5AC82CA4B52DC4BD33A52E /* Pods-ZhaohangTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhaohangTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhaohangTest/Pods-ZhaohangTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39F395CA1FE11456007E0450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396BDE0C1FE224320029EC65 /* MediaToolbox.framework in Frameworks */,
+				396BDE0A1FE2242C0029EC65 /* MediaPlayer.framework in Frameworks */,
+				39ED7E7B1FE1188E0045BA91 /* libopencore-amrwb.a in Frameworks */,
+				39ED7E7C1FE1188E0045BA91 /* libopencore-amrnb.a in Frameworks */,
+				39ED7E721FE117360045BA91 /* libz.tbd in Frameworks */,
+				9B18B751F48270F34BE0B402 /* Pods_ZhaohangTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39ED7E681FE115860045BA91 /* amrUtil */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E801FE118CC0045BA91 /* include */,
+				39ED7E7D1FE118B40045BA91 /* amrFileCodec.h */,
+				39ED7E7E1FE118B40045BA91 /* amrFileCodec.m */,
+			);
+			path = amrUtil;
+			sourceTree = "<group>";
+		};
+		39ED7E691FE115940045BA91 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E961FE122D30045BA91 /* AsrWithHttpController.h */,
+				39ED7E971FE122D30045BA91 /* AsrWithHttpController.m */,
+				39ED7E931FE122C00045BA91 /* TtsWithHttpController.h */,
+				39ED7E941FE122C00045BA91 /* TtsWithHttpController.m */,
+				39ED7E6A1FE115AC0045BA91 /* AsrWithWebSocketController.h */,
+				39ED7E6B1FE115AC0045BA91 /* AsrWithWebSocketController.m */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		39ED7E6D1FE1169C0045BA91 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E6E1FE116AD0045BA91 /* AppInfo.h */,
+				39ED7E6F1FE116AD0045BA91 /* AppInfo.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		39ED7E801FE118CC0045BA91 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E821FE118F20045BA91 /* opencore-amrwb */,
+				39ED7E811FE118E50045BA91 /* opencore-amrnb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		39ED7E811FE118E50045BA91 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E851FE119300045BA91 /* interf_dec.h */,
+				39ED7E861FE119300045BA91 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		39ED7E821FE118F20045BA91 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E831FE1191D0045BA91 /* dec_if.h */,
+				39ED7E841FE1191D0045BA91 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		39ED7E871FE119590045BA91 /* AudioRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E8D1FE119840045BA91 /* MCAudioInputQueue.h */,
+				39ED7E8C1FE119840045BA91 /* MCAudioInputQueue.m */,
+			);
+			path = AudioRecorder;
+			sourceTree = "<group>";
+		};
+		39ED7E881FE119650045BA91 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7E891FE119770045BA91 /* AVAudioPlayer+PCM.h */,
+				39ED7E8A1FE119770045BA91 /* AVAudioPlayer+PCM.m */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		39ED7EBE1FE1361A0045BA91 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7EBF1FE136330045BA91 /* AsrViewController.h */,
+				39ED7EC01FE136440045BA91 /* AsrViewController.m */,
+				39ED7EC21FE136520045BA91 /* TTSViewController.h */,
+				39ED7EC31FE136640045BA91 /* TTSViewController.m */,
+				396BB3EA1FE26C62007A9683 /* H5ViewController.h */,
+				396BB3EB1FE26C70007A9683 /* H5ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		39F395C41FE11456007E0450 = {
+			isa = PBXGroup;
+			children = (
+				39F395CF1FE11456007E0450 /* ZhaohangTest */,
+				39F395CE1FE11456007E0450 /* Products */,
+				B9544C3AD32F5DACC804D008 /* Pods */,
+				E9DA657BF94F9A1F62090A87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39F395CE1FE11456007E0450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39F395CD1FE11456007E0450 /* ZhaohangTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39F395CF1FE11456007E0450 /* ZhaohangTest */ = {
+			isa = PBXGroup;
+			children = (
+				3981CA411FE28D99001F7F17 /* app.html */,
+				39ED7EBE1FE1361A0045BA91 /* ViewController */,
+				39ED7E881FE119650045BA91 /* AudioPlayer */,
+				39ED7E871FE119590045BA91 /* AudioRecorder */,
+				39ED7E6D1FE1169C0045BA91 /* Util */,
+				39ED7E691FE115940045BA91 /* Connection */,
+				39ED7E681FE115860045BA91 /* amrUtil */,
+				39F395D01FE11456007E0450 /* AppDelegate.h */,
+				39F395D11FE11456007E0450 /* AppDelegate.m */,
+				39F395D31FE11456007E0450 /* ViewController.h */,
+				39F395D41FE11456007E0450 /* ViewController.m */,
+				39F395D61FE11456007E0450 /* Main.storyboard */,
+				39F395D91FE11456007E0450 /* Assets.xcassets */,
+				39F395DB1FE11456007E0450 /* LaunchScreen.storyboard */,
+				39F395DE1FE11456007E0450 /* Info.plist */,
+				39F395DF1FE11456007E0450 /* main.m */,
+				39ED7E8F1FE11E150045BA91 /* zhaohangTest-Prefix.pch */,
+			);
+			path = ZhaohangTest;
+			sourceTree = "<group>";
+		};
+		B9544C3AD32F5DACC804D008 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA5AC82CA4B52DC4BD33A52E /* Pods-ZhaohangTest.debug.xcconfig */,
+				7E13C14879D7A1E0C32C3C8C /* Pods-ZhaohangTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9DA657BF94F9A1F62090A87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				396BDE0B1FE224320029EC65 /* MediaToolbox.framework */,
+				396BDE091FE2242C0029EC65 /* MediaPlayer.framework */,
+				39ED7E7A1FE1188E0045BA91 /* libopencore-amrnb.a */,
+				39ED7E791FE1188E0045BA91 /* libopencore-amrwb.a */,
+				39ED7E711FE117360045BA91 /* libz.tbd */,
+				3F5ED9277795729B43CB59BB /* Pods_ZhaohangTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39F395CC1FE11456007E0450 /* ZhaohangTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39F395E31FE11456007E0450 /* Build configuration list for PBXNativeTarget "ZhaohangTest" */;
+			buildPhases = (
+				A5583C430DD72FE4F5F203CF /* [CP] Check Pods Manifest.lock */,
+				39F395C91FE11456007E0450 /* Sources */,
+				39F395CA1FE11456007E0450 /* Frameworks */,
+				39F395CB1FE11456007E0450 /* Resources */,
+				AA9B30958CE2258982701170 /* [CP] Embed Pods Frameworks */,
+				D89C4F1FA8BD4ABD26B2D5E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZhaohangTest;
+			productName = ZhaohangTest;
+			productReference = 39F395CD1FE11456007E0450 /* ZhaohangTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39F395C51FE11456007E0450 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = xiaoi;
+				TargetAttributes = {
+					39F395CC1FE11456007E0450 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 39F395C81FE11456007E0450 /* Build configuration list for PBXProject "ZhaohangTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39F395C41FE11456007E0450;
+			productRefGroup = 39F395CE1FE11456007E0450 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39F395CC1FE11456007E0450 /* ZhaohangTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39F395CB1FE11456007E0450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F395DD1FE11456007E0450 /* LaunchScreen.storyboard in Resources */,
+				39F395DA1FE11456007E0450 /* Assets.xcassets in Resources */,
+				3981CA421FE28D99001F7F17 /* app.html in Resources */,
+				39F395D81FE11456007E0450 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5583C430DD72FE4F5F203CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZhaohangTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA9B30958CE2258982701170 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZhaohangTest/Pods-ZhaohangTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhaohangTest/Pods-ZhaohangTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89C4F1FA8BD4ABD26B2D5E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhaohangTest/Pods-ZhaohangTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39F395C91FE11456007E0450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39ED7E8B1FE119770045BA91 /* AVAudioPlayer+PCM.m in Sources */,
+				39ED7E701FE116AD0045BA91 /* AppInfo.m in Sources */,
+				39ED7E6C1FE115AC0045BA91 /* AsrWithWebSocketController.m in Sources */,
+				39F395D51FE11456007E0450 /* ViewController.m in Sources */,
+				39ED7E981FE122D30045BA91 /* AsrWithHttpController.m in Sources */,
+				39F395E01FE11456007E0450 /* main.m in Sources */,
+				39ED7E8E1FE119840045BA91 /* MCAudioInputQueue.m in Sources */,
+				39F395D21FE11456007E0450 /* AppDelegate.m in Sources */,
+				39ED7EC41FE136640045BA91 /* TTSViewController.m in Sources */,
+				396BB3EC1FE26C70007A9683 /* H5ViewController.m in Sources */,
+				39ED7E951FE122C00045BA91 /* TtsWithHttpController.m in Sources */,
+				39ED7E7F1FE118B40045BA91 /* amrFileCodec.m in Sources */,
+				39ED7EC11FE136440045BA91 /* AsrViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39F395D61FE11456007E0450 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39F395D71FE11456007E0450 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39F395DB1FE11456007E0450 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39F395DC1FE11456007E0450 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39F395E11FE11456007E0450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		39F395E21FE11456007E0450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39F395E41FE11456007E0450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5AC82CA4B52DC4BD33A52E /* Pods-ZhaohangTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YRAGDN28AR;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZhaohangTest/zhaohangTest-Prefix.pch";
+				INFOPLIST_FILE = ZhaohangTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZhaohangTest",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoi.ZhaohangTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39F395E51FE11456007E0450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E13C14879D7A1E0C32C3C8C /* Pods-ZhaohangTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YRAGDN28AR;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZhaohangTest/zhaohangTest-Prefix.pch";
+				INFOPLIST_FILE = ZhaohangTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZhaohangTest",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiaoi.ZhaohangTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39F395C81FE11456007E0450 /* Build configuration list for PBXProject "ZhaohangTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F395E11FE11456007E0450 /* Debug */,
+				39F395E21FE11456007E0450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39F395E31FE11456007E0450 /* Build configuration list for PBXNativeTarget "ZhaohangTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F395E41FE11456007E0450 /* Debug */,
+				39F395E51FE11456007E0450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39F395C51FE11456007E0450 /* Project object */;
+}

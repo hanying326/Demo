@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0I4-bo-k7N">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--h5-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="H5ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="h5" id="p9i-YL-ihR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="105"/>
+        </scene>
+        <!--合成-->
+        <scene sceneID="BDa-9n-549">
+            <objects>
+                <viewController id="FcA-K9-dgg" customClass="TTSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mkF-r7-Ney">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy0-vP-EfM">
+                                <rect key="frame" x="16" y="282" width="288" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="播放TTS"/>
+                                <connections>
+                                    <action selector="playTTS:" destination="FcA-K9-dgg" eventType="touchUpInside" id="4qt-cm-9gV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请输入要合成的话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTR-Yd-kjT">
+                                <rect key="frame" x="16" y="90" width="200" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-Ej-s7f">
+                                <rect key="frame" x="16" y="140" width="288" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="招行信用卡POC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFR-Mu-LPe">
+                                <rect key="frame" x="0.0" y="20" width="320" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5qp-XS-ZsB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="合成" image="speak" id="MDv-8T-JOw"/>
+                    <connections>
+                        <outlet property="label" destination="PFR-Mu-LPe" id="aU3-Ny-W5P"/>
+                        <outlet property="playBtn" destination="Dy0-vP-EfM" id="XO0-1m-Ggj"/>
+                        <outlet property="questionView" destination="gPI-Ej-s7f" id="scJ-Cv-dFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1Z-lM-hLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="867.25352112676057"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="VLN-3H-NNx">
+            <objects>
+                <viewController id="9gW-Dk-T6Z" customClass="AsrViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xd-tt-EtP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZsL-FC-4CM">
+                                <rect key="frame" x="16" y="140" width="288" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="语音识别结果：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mr-Yg-Egp">
+                                <rect key="frame" x="16" y="90" width="144" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="招行信用卡POC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fei-qt-2aV">
+                                <rect key="frame" x="0.0" y="20" width="320" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lD-AT-wR6">
+                                <rect key="frame" x="16" y="320" width="288" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" 长按录音"/>
+                                <connections>
+                                    <action selector="touchDown:" destination="9gW-Dk-T6Z" eventType="touchDown" id="MHG-K4-srg"/>
+                                    <action selector="touchUp:" destination="9gW-Dk-T6Z" eventType="touchUpInside" id="bas-kJ-Ml7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gh-bX-TxC">
+                                <rect key="frame" x="16" y="420" width="288" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WebSocket"/>
+                                <connections>
+                                    <action selector="wsTouchDown:" destination="9gW-Dk-T6Z" eventType="touchDown" id="SjO-Tv-cGX"/>
+                                    <action selector="wsTouchUp:" destination="9gW-Dk-T6Z" eventType="touchUpInside" id="HMg-55-DSM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="9ff-J6-mBC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="识别" image="record" id="c9r-Zo-IA3"/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="59S-vQ-VZJ"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Title" id="CLj-Dp-8fp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label" destination="fei-qt-2aV" id="NO7-Bz-A1F"/>
+                        <outlet property="recordBtn" destination="0lD-AT-wR6" id="2vt-hE-lan"/>
+                        <outlet property="resultView" destination="ZsL-FC-4CM" id="nKg-Zq-gO8"/>
+                        <outlet property="webSocketBtn" destination="6gh-bX-TxC" id="1NU-SC-qmg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zP0-sy-QWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="104.5774647887324"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ifm-IU-tEJ">
+            <objects>
+                <tabBarController id="0I4-bo-k7N" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wn4-U5-6gj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9gW-Dk-T6Z" kind="relationship" relationship="viewControllers" id="0Gv-49-yoY"/>
+                        <segue destination="FcA-K9-dgg" kind="relationship" relationship="viewControllers" id="tcp-1g-ZTK"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="AOo-MJ-wCR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6i-2u-4OT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="112"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="p8G-rm-mmq">
+            <objects>
+                <viewControllerPlaceholder id="eTC-uS-m53" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jc-7F-M1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="record" width="32" height="32"/>
+        <image name="speak" width="32" height="32"/>
+    </resources>
+</document>
